@@ -11,13 +11,6 @@ pipeline {
         appRegistry = "865483172908.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg"
         vprofileRegistry = "https://865483172908.dkr.ecr.us-east-1.amazonaws.com"
     }
-  stages {
-    stage('test slack'){
-            steps{
-                sh 'NotARealCommand'
-
-            }
-        }
         stage('Fetch code') {
             steps {
                git branch: 'docker', url: 'https://github.com/hkhcoder/vprofile-project.git'

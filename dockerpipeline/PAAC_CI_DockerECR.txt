@@ -7,7 +7,7 @@ pipeline {
 
 
     environment {
-        registryCredential = 'ecr:us-east-2:awscreds'
+        registryCredential = 'ecr:us-east-1:awscreds'
         appRegistry = "865483172908.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg"
         vprofileRegistry = "https://865483172908.dkr.ecr.us-east-1.amazonaws.com"
     }
